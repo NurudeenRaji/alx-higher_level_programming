@@ -11,15 +11,26 @@ class Square:
         size : int
             A private size of the square
         """
+        self.__size = size
 
+    @property
+    def size(self):
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        #self.__size = value
         try:
-            if type(size) is not int:
+            if type(value) is not int:
                 raise TypeError
-            elif size < 0:
+            elif value < 0:
                 raise ValueError
         except TypeError:
             print("size must be an integer")
         except ValueError:
             print("size must be >= 0")
+        self.__size = value
 
-        self.__size = size
+    def area(self):
+        """ A method that returns the area of the square """
+        return (self.__size * self.__size)
