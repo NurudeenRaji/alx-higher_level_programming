@@ -33,3 +33,13 @@ class Square:
     def area(self):
         """ A method that returns the area of the square """
         return (self.__size * self.__size)
+
+    def my_print(self):
+        """ A method that prints the size of the square """
+        if self.__size != 0:
+            for i in range(self.__size):
+                for j in range(self.__size):
+                    print("#", end='')
+                print()
+        else:
+            print()
