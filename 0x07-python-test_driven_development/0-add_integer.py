@@ -6,9 +6,10 @@ Addition of two integers
 This module has only one function.
 """
 
+
 def add_integer(a, b=98):
     """
-    A function adding two integers 
+    A function adding two integers
 
     param a: the first integer
     param b: has default value of 98.
@@ -19,7 +20,7 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if not (type(b) is int or type(b) is float):
         raise TypeError("b must be an integer")
-    
+
     a = int(a)
     b = int(b)
 
