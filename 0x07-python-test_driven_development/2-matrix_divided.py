@@ -10,15 +10,17 @@ The function takes two parameter
 def matrix_divided(matrix, div):
     """
     Divides all the elements of a mtrix
-    
+
     matrix(param): the matrix parameter
     div(param): divisor of the matrix.
     return: a new matrix which is the result of the division.
 
     """
-    if not (isinstance(matrix, list) and all(isinstance(row, list) 
-        and all(isinstance(num, (int, float)) for num in row) for row in matrix)):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if not (isinstance(matrix, list) and all(isinstance(row, list)
+            and all(isinstance(num, (int, float))
+            for num in row) for row in matrix)):
+        raise TypeError("matrix must be a matrix(list of lists)
+                        of integers/floats")
     if any(len(row) != len(matrix[0]) for row in matrix[1:]):
         raise TypeError("Each row of the matrix must have the same size")
     if not isinstance(div, (int, float)):
@@ -35,4 +37,3 @@ def matrix_divided(matrix, div):
         new_matrix.append(new_row)
 
     return new_matrix
-
