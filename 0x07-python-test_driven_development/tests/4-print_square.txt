@@ -5,7 +5,7 @@ Function to prints a square with #
 It has only one function ''print_square()''
 ::
 
->>> from 4-print_square import print_square
+>>> from print_square import print_square
 >>> print_square(4)
 ####
 ####
