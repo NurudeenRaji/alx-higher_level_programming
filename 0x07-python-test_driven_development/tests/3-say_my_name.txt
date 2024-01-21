@@ -4,8 +4,7 @@ Function to print my names
 
 It has only one function ''say_my_name()''
 ::
-	>>> module = __import__('3-say_my_name')
-	>>> say_my_name = module.say_my_name
+	>>> from say_my_name import say_my_name
 	>>> say_my_name("John", "Smith")
 	My name is John Smith
 
