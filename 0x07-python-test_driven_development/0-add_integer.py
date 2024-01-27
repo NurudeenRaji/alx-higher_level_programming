@@ -19,9 +19,6 @@ def add_integer(a, b=98):
 
     res = a + b
 
-    if res == float('inf') or res == float(-'inf'):
-        raise OverflowError("float Overflow")
-
     res = int(a) + int(b)
 
     return res
