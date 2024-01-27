@@ -27,3 +27,7 @@ b must be an integer
 ...     print(e)
 ...
 a must be an integer
+
+>>> add_integer(-1e308, -1e308)
+Traceback (most recent call last):
+OverflowError: float overflow
