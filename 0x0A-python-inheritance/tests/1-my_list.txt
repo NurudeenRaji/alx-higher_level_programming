@@ -1,0 +1,35 @@
+================
+1-my_list module
+================
+
+
+""
+A function that prints a list, but sorted form
+"""
+
+:::
+	>>> my_list = __import__("1-my_list").MyList
+
+	>>> empty = MyList([])
+	>>> empty.print_sorted()
+	[]
+
+	>>> new_list = MyList([1, 4, 2, 3, 5])
+	>>> new_list.print_sored()
+	[1, 2, 3, 4, 5]
+
+	>>> del = MyList([1, -4, 2, -3, 5])
+        >>> del.print_sored()
+        [-4, -3, 1, 2, 5]
+
+	>>> str = MyList("string")
+	>>> str.print_sorted()
+	Traceback (most recent call last):
+		...
+	ValueError: Input must be a list of numbers.
+
+	>>> dec = MyList((1, 9.88))
+	>>> dec.print_sorted()
+	Traceback (most recent call last):
+		...
+	ValueError: Input must be a list of numbers.
