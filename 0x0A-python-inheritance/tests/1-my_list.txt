@@ -26,10 +26,10 @@ A function that prints a list, but sorted form
 	>>> str.print_sorted()
 	Traceback (most recent call last):
 		...
-	ValueError: Input must be a list of numbers.
+	ValueError: List must be a list of numbers.
 
 	>>> dec = MyList((1, 9.88))
 	>>> dec.print_sorted()
 	Traceback (most recent call last):
 		...
-	ValueError: Input must be a list of numbers.
+	ValueError: List must be a list of numbers.
