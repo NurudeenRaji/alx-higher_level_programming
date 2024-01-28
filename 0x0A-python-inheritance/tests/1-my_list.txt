@@ -8,7 +8,7 @@ A function that prints a list, but sorted form
 """
 
 :::
-	>>> my_list = __import__("1-my_list").MyList
+	>>> MyList = __import__('1-my_list').MyList
 
 	>>> empty = MyList([])
 	>>> empty.print_sorted()
