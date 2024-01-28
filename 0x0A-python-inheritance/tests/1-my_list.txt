@@ -15,11 +15,11 @@ A function that prints a list, but sorted form
 	[]
 
 	>>> new_list = MyList([1, 4, 2, 3, 5])
-	>>> new_list.print_sored()
+	>>> new_list.print_sorted()
 	[1, 2, 3, 4, 5]
 
-	>>> del = MyList([1, -4, 2, -3, 5])
-        >>> del.print_sored()
+	>>> del_list = MyList([1, -4, 2, -3, 5])
+        >>> del_list.print_sorted()
         [-4, -3, 1, 2, 5]
 
 	>>> str = MyList("string")
