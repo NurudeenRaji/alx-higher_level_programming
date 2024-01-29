@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 7-base_geometry module """
+""" 9-rectangle module """
 
 
 class BaseGeometry:
@@ -26,3 +26,22 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(self.name))
         if self.value <= 0:
             raise ValueError("{} must be greater than 0".format(self.name))
+
+class Rectangle(BaseGeometry):
+    """ BaseGeometry class """
+
+    def __init__(self, width, height):
+        """ Constructor """
+
+        self.__width = width
+        self.__height = height
+
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+
+    def area(self):
+        """ Calculates the area of the rectangle """
+        return self.__width * self.__height
+    def __str__(self):
+        """ String representation of the retangle """
+        return ("[Rectangle] {}/{}".format(self.__width, self.__height))
