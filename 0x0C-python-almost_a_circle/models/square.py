@@ -38,9 +38,13 @@ class Square(Rectangle):
 
         attributes = ['id', 'size', 'x', 'y']
         if args:
-            for attribute, value in zip(attributes, args):
                 setattr(self, attribute, value)
         elif kwargs:
             for key, value in kwargs.items():
                 if hasattr(self, key):
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """ Returns the dictionary representation of a Sqaure class """
+
+        return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
