@@ -38,7 +38,7 @@ class Square(Rectangle):
 
         attributes = ['id', 'size', 'x', 'y']
         if args:
-                setattr(self, attribute, value)
+            setattr(self, attribute, value)
         elif kwargs:
             for key, value in kwargs.items():
                 if hasattr(self, key):
