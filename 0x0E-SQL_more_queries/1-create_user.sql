@@ -1,4 +1,4 @@
 -- A script that creates the MySQL server user user_0d_1
 
 CREATE USER 'user_0d_1'@'localhost' IF NOT EXISTS BY 'user_0d_1_pwd';
-GRANT ALL PRIVELEGES ON *.* TO 'user_0d_1'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost' WITH GRANT OPTION;
